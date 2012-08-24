@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Progress Bar Button</title>
+  <style>
+    body, html {
+      padding: 0;
+      margin: 0;
+      font-size: 16px;
+      font-family: 'Helvetica Neue'
+    }
+
+    .button {
+      border: 0;
+      margin: 20px;
+      background: #cecece;
+      background-image: -webkit-linear-gradient(#eee, #cecece);
+      background-image: -moz-linear-gradient(#eee, #cecece);
+      border: 1px solid #cecece;
+      border-radius: 4px;
+      display: inline-block;
+      padding: 10px 30px;
+      cursor: pointer;
+    }
+
+    .code {
+      display: block;
+      background: #eee;
+      border-radius: 4px;
+      box-shadow: 0 0 10px #444 inset;
+      padding: 10px;
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class='button'>Press Me</div>
+  <pre class='code'>
+  $(function(){
+    $('.button').confirmedPress(function(){
+      alert('Confirmed');
+    });
+  });
+  </pre>
+
+  <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js'></script>
+  <script type='text/javascript' src='confirmed_press.js'></script>
+  <script type='text/javascript'>
+    $(function(){
+      $('.button').confirmedPress(function(){
+        alert('Confirmed');
+      });
+    });
+  </script>
+
+</body>
+</html>
