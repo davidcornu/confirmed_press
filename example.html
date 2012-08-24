@@ -21,6 +21,9 @@
       display: inline-block;
       padding: 10px 30px;
       cursor: pointer;
+      font-size: 100%;
+      font-family: inherit;
+      font-weight: normal;
     }
 
     .code {
@@ -35,7 +38,8 @@
 </head>
 <body>
 
-  <div class='button'>Press Me</div>
+  <button class='button'>Press Me</button>
+
   <pre class='code'>
   $(function(){
     $('.button').confirmedPress(function(){
